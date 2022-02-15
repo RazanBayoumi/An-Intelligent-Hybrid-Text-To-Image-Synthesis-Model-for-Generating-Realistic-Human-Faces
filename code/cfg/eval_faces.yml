@@ -1,7 +1,7 @@
 CONFIG_NAME: 'DMGAN'
 
 DATASET_NAME: 'faces'
-DATA_DIR: '/content/Faces/data/faces'
+DATA_DIR: '../data/faces'
 GPU_ID: 3
 WORKERS: 0
 
@@ -12,10 +12,10 @@ TREE:
 
 TRAIN:
     FLAG: False
-    NET_G: '/content/drive/MyDrive/Trained_Models/faces_DMGAN_2021_07_13_04_19_39/Model/netG_epoch_160.pth'
+    NET_G: '../netG.pth'
     B_NET_D: False
     BATCH_SIZE: 10
-    NET_E: '/content/Faces/DAMSMencoders/text_encoder600.pth'
+    NET_E: '../DAMSMencoders/text_encoder600.pth'
 
 
 GAN:
